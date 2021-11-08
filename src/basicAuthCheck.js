@@ -1,8 +1,10 @@
 import initializeBasicAuth from "nextjs-basic-auth";
 
 const users = [
-  { user: "user", password: "password" },
-  { user: "admin", password: "admin" },
+  {
+    user: process.env.BASIC_AUTH_USERNAME,
+    password: process.env.BASIC_AUTH_PASSWORD,
+  },
 ];
 
 const basicAuthCheck = async (req, res) => {
