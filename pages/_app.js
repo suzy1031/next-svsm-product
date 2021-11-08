@@ -1,7 +1,19 @@
-import '../styles/globals.css'
+import App from "next/app";
+import "../styles/globals.css";
 
+import basicAuthCheck from "../src/basicAuthCheck";
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+MyApp.getInitialProps = async (appContext) => {
+  const { req, res } = appContext.ctx;
+  if (req && res) {
+    await basicAuthCheck(req, res);
+  }
+
+  const appProps = await App.getInitialProps(appContext);
+  return { ...appProps };
+};
+
+export default MyApp;
