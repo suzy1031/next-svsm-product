@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+
 import App from "next/app";
 import "../styles/globals.css";
 
@@ -33,11 +33,6 @@ MyApp.getInitialProps = async (appContext) => {
 
   const appProps = await App.getInitialProps(appContext);
   return { ...appProps };
-};
-
-MyApp.propTypes = {
-  Component: PropTypes.elementType.isRequired,
-  pageProps: PropTypes.object.isRequired,
 };
 
 export default MyApp;
