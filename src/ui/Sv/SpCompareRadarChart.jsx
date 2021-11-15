@@ -7,7 +7,7 @@ import {
   Legend,
 } from "recharts";
 
-const SkillsRadarChart = ({
+const SpCompareRadarChart = ({
   ownAreaData,
   compareAreaData,
   ownAreaName,
@@ -88,4 +88,4 @@ const SkillsRadarChart = ({
     </RadarChart>
   );
 };
-export default SkillsRadarChart;
+export default SpCompareRadarChart;

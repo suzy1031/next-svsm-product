@@ -7,7 +7,7 @@ import {
   PolarRadiusAxis,
 } from "recharts";
 
-const SkillsRadarChart = memo(({ chartData, checked, allStoreAverage }) => {
+const SpSkillsRadarChart = memo(({ chartData, checked, allStoreAverage }) => {
   const data = [
     {
       subject: "店長力",
@@ -84,4 +84,4 @@ const SkillsRadarChart = memo(({ chartData, checked, allStoreAverage }) => {
     </RadarChart>
   );
 });
-export default SkillsRadarChart;
+export default SpSkillsRadarChart;

@@ -7,7 +7,7 @@ import {
   Legend,
 } from "recharts";
 
-const SkillsRadarChart = ({ chartData, checked, chartDataB, chartDataC }) => {
+const SpSkillsRadarChart = ({ chartData, checked, chartDataB, chartDataC }) => {
   const { id_0, id_1, id_2 } = checked;
 
   const data = [
@@ -105,4 +105,4 @@ const SkillsRadarChart = ({ chartData, checked, chartDataB, chartDataC }) => {
     </RadarChart>
   );
 };
-export default SkillsRadarChart;
+export default SpSkillsRadarChart;
